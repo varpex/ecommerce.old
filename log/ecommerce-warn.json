@@ -1,0 +1,1 @@
+{"caller":"server_adapter_go.go:94","error":"http: Server closed","lvl":"WARN","module":"revel","msg":"Server exiting:","section":"server","t":"2019-02-11T17:19:43.3700829+03:30"}

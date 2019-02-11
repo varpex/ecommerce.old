@@ -34,6 +34,12 @@
     </script> -->
     <!-- Modernizr-->
     <script src="/public/js/modernizr.min.js"></script>
+    {{range .moreStyles}}
+      <link rel="stylesheet" type="text/css" href="/public/{{.}}">
+    {{end}}
+    {{range .moreScripts}}
+      <script src="/public/{{.}}" type="text/javascript" charset="utf-8"></script>
+    {{end}}
   </head>
   <!-- Body-->
   <body>
