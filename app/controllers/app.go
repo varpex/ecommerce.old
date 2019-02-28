@@ -1,11 +1,18 @@
 package controllers
 
 import (
+	"github.com/jinzhu/gorm"
+	_ "github.com/jinzhu/gorm/dialects/postgres"
 	"github.com/revel/revel"
 )
 
 type App struct {
 	*revel.Controller
+}
+
+type Product struct {
+	gorm.Model
+	Test string
 }
 
 func (c App) Index() revel.Result {

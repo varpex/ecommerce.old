@@ -9,6 +9,30 @@ module:testrunner
 
 GET     /                                       App.Index
 
+GET     /tvs/base-features                      TvBaseFeatureController.List
+GET     /tvs/base-features/:id                  TvBaseFeatureController.Retrieve
+POST    /tvs/base-features                      TvBaseFeatureController.Post
+PATCH   /tvs/base-features/:id                  TvBaseFeatureController.Patch
+DELETE  /tvs/base-features/:id                  TvBaseFeatureController.Delete
+
+GET     /tvs/features                           TvFeatureController.List
+GET     /tvs/features/:id                       TvFeatureController.Retrieve
+POST    /tvs/features                           TvFeatureController.Post
+PATCH   /tvs/features/:id                       TvFeatureController.Patch
+DELETE  /tvs/features/:id                       TvFeatureController.Delete
+
+GET     /tvs/prices                             TvPriceController.List
+GET     /tvs/prices/:id                         TvPriceController.Retrieve
+POST    /tvs/prices                             TvPriceController.Post
+PATCH   /tvs/prices/:id                         TvPriceController.Patch
+DELETE  /tvs/prices/:id                         TvPriceController.Delete
+
+GET     /tvs                                    TvController.List
+GET     /tvs/:id                                TvController.Retrieve
+POST    /tvs                                    TvController.Post
+PATCH   /tvs/:id                                TvController.Patch
+DELETE  /tvs/:id                                TvController.Delete
+
 # Ignore favicon requests
 GET     /favicon.ico                            404
 
